@@ -705,7 +705,7 @@ No solo entrego código; entrego un producto. Desde la primera línea de código
             refineLoader.classList.remove('hidden');
 
             const langPrompt = currentLang === 'en' ? "in English" : "en Español";
-            const prompt = `Rewrite the following message to be more professional and polite for a job inquiry ${langPrompt}. Original: "${originalText}". Return ONLY the rewritten text.`;
+            const prompt = `Rewrite the following message to make it more professional ${langPrompt}. Original: "${originalText}". Return ONLY the rewritten text.`;
 
             const refinedText = await callGemini(prompt);
 
@@ -718,4 +718,5 @@ No solo entrego código; entrego un producto. Desde la primera línea de código
     </script>
 </body>
 </html>
+
 
